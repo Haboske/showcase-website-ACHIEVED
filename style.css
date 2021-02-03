@@ -1,0 +1,261 @@
+/** GENERAL WEBSITE SETTINGS **/
+*{
+	-moz-box-sizing: border-box; box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+    font-family: titillium_webregular;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+
+/** END GENERAL WEBSITE SETTINGS **/
+
+/** MENU TOP PAGE **/
+header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px -100px 200px;
+}
+    #logo{ /** LOGO **/
+        width: 11.43em;
+        height: 13em;
+
+        margin-left: 3.5em;
+        margin-top: 2em;
+        
+    }
+    #home{ /** HOME NAV ICON **/
+        width: 2.4em;
+        height: 2.4em;
+
+        margin-left: 18.5em;
+        margin-top: -13.4em;
+
+        background: url(svgconception/home.svg) no-repeat;
+
+        transition: ease 0.5s;
+    }
+        #home:hover{
+            background: url(svgconception/homehover.svg) no-repeat;
+        }
+    #navigation{ /** NAV TOP PAGE **/
+        position: absolute;
+        top: 2.2em;
+        margin-left: 23em;
+    }
+        .menu{
+            font-size: 1.3em;
+            font-family: titillium_websemibold;
+            color: #7F3996;
+
+            margin: 1em;
+
+        }
+            #portfolio::before{
+                content: "";
+                position: absolute;
+                width: 4.95em;
+                height: 0.15em;
+                top: 1.45em;
+                bottom: 0;
+                left: 1em;
+                background-color: #7F3996;
+                opacity: 0;
+
+                transition: opacity ease 0.5s;
+            }
+                #portfolio:hover::before{
+                    opacity: 1;
+                }
+            #projet::before{
+                content: "";
+                position: absolute;
+                width: 3.2em;
+                height: 0.15em;
+                top: 1.45em;
+                bottom: 0;
+                left: 8.20em;
+                background-color: #7F3996;
+                opacity: 0;
+
+                transition: opacity ease 0.5s;
+            }
+                #projet:hover::before{
+                    opacity: 1;
+                }
+            #contact::before{
+                content: "";
+                position: absolute;
+                width: 7.2em;
+                height: 0.15em;
+                top: 1.45em;
+                bottom: 0;
+                left: 13.7em;
+                background-color: #7F3996;
+                opacity: 0;
+
+                transition: opacity ease 0.5s;
+            }
+                #contact:hover::before{
+                    opacity: 1;
+                }
+    /** END NAV TOP PAGE **/
+
+/** END MENU TOP PAGE **/
+
+#banner{
+    width: 100%;
+    height: 600px;
+    background-size: 100%;
+    background-image: url(media/banner.jpg);
+    background-repeat: no-repeat;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @font-face {
+ 
+        font-family: 'titillium_webblack';
+        src: url('font/titilliumweb-black-webfont.woff2') format('woff2'),
+             url('font/titilliumweb-black-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'titillium_webbold';
+        src: url('font/titilliumweb-bold-webfont.woff2') format('woff2'),
+             url('font/titilliumweb-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+     
+        font-family: 'titillium_webbold_italic';
+        src: url('font/titilliumweb-bolditalic-webfont.woff2') format('woff2'),
+             url('font/titilliumweb-bolditalic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'titillium_webextralight';
+        src: url('font/titilliumweb-extralight-webfont.woff2') format('woff2'),
+             url('font/titilliumweb-extralight-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+     
+        font-family: 'titillium_webXLtIt';
+        src: url('font/titilliumweb-extralightitalic-webfont.woff2') format('woff2'),
+             url('font/titilliumweb-extralightitalic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'titillium_webitalic';
+        src: url('font/titilliumweb-italic-webfont.woff2') format('woff2'),
+             url('font/titilliumweb-italic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+     
+        font-family: 'titillium_weblight';
+        src: url('font/titilliumweb-light-webfont.woff2') format('woff2'),
+             url('font/titilliumweb-light-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'titillium_weblight_italic';
+        src: url('font/titilliumweb-lightitalic-webfont.woff2') format('woff2'),
+             url('font/titilliumweb-lightitalic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'titillium_webregular';
+        src: url('font/titilliumweb-regular-webfont.woff2') format('woff2'),
+             url('font/titilliumweb-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+     
+        font-family: 'titillium_websemibold';
+        src: url('font/titilliumweb-semibold-webfont.woff2') format('woff2'),
+             url('font/titilliumweb-semibold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'titillium_websemibold_italic';
+        src: url('font/titilliumweb-semibolditalic-webfont.woff2') format('woff2'),
+             url('font/titilliumweb-semibolditalic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'arvobold';
+        src: url('arvo-bold-webfont.woff2') format('woff2'),
+             url('arvo-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    @font-face {
+        font-family: 'arvobold_italic';
+        src: url('arvo-bolditalic-webfont.woff2') format('woff2'),
+             url('arvo-bolditalic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    @font-face {
+        font-family: 'arvoitalic';
+        src: url('arvo-italic-webfont.woff2') format('woff2'),
+             url('arvo-italic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    font-face {
+        font-family: 'arvoregular';
+        src: url('arvo-regular-webfont.woff2') format('woff2'),
+             url('arvo-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
