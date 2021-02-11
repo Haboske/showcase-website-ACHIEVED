@@ -1,0 +1,82 @@
+/* Frame */
+
+position: relative;
+width: 336px;
+height: 336px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Calque 2 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Calque 1 2 2 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: linear-gradient(45.23deg, #7F3996 0%, #000000 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 19.05%;
+right: 19.64%;
+top: 23.07%;
+bottom: 54.29%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 25.89%;
+right: 25.89%;
+top: 35.18%;
+bottom: 23.21%;
+
+background: #FFFFFF;
+
+
+<svg width="336" height="336" viewBox="0 0 336 336" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0V336H336V0H0ZM249 258H187V201H148V258H87V158.7L168 118.2L249 158.7V258ZM270 153.6L167 102.1L64 153.6V128.9L167.1 77.5L225 106.4V87H248V118.1L270 129V153.6Z" fill="url(#paint0_linear)"/>
+<path d="M270 128.9V153.6L167 102.1L64 153.6V128.9L167.1 77.5L225 106.4V87H248V118.1L270 128.9Z" fill="white"/>
+<path d="M249 158.7V258H187V201H148V258H87V158.7L168 118.2L249 158.7Z" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear" x1="-0.670192" y1="335.324" x2="336.67" y2="0.675592" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7F3996"/>
+<stop offset="1"/>
+</linearGradient>
+</defs>
+</svg>
