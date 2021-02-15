@@ -7,7 +7,6 @@
 
 body{
     width: 100%;
-    height: 100%;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
 
@@ -25,9 +24,8 @@ a{
 
 /* MENU TOP PAGE */
 header{
-    float: left;
-    z-index: 102;
     position: fixed;
+    top: 0px;
     height: 6.25rem;
     width: 100%;
     background-color: white;
@@ -59,12 +57,13 @@ header{
         display: flex;
         position: absolute;
         top: 2.2rem;
-        margin-left: 23rem;
+        margin-left: 21.7rem;
     }
         .menu{
             font-size: 1.3rem;
             font-family: titillium_websemibold;
             color: #7F3996;
+            text-transform: uppercase;
 
             margin-left: 3rem;
 
@@ -72,9 +71,9 @@ header{
             #portfolio::before{
                 content: "";
                 position: absolute;
-                width: 4.95rem;
+                width: 7.8rem;
                 height: 0.15rem;
-                top: 1.45rem;
+                top: 2rem;
                 bottom: 0;
                 background-color: #7F3996;
                 opacity: 0;
@@ -87,11 +86,11 @@ header{
             #projet::before{
                 content: "";
                 position: absolute;
-                width: 3.2rem;
+                width: 4.1rem;
                 height: 0.15rem;
-                top: 1.45rem;
+                top: 2rem;
                 bottom: 0;
-                left: 8.20rem;
+                left: 13.8rem;
                 background-color: #7F3996;
                 opacity: 0;
 
@@ -103,11 +102,11 @@ header{
             #contact::before{
                 content: "";
                 position: absolute;
-                width: 7.2rem;
+                width: 9.5rem;
                 height: 0.15rem;
-                top: 1.45rem;
+                top: 2rem;
                 bottom: 0;
-                left: 13.7rem;
+                left: 20.8rem;
                 background-color: #7F3996;
                 opacity: 0;
 
@@ -118,31 +117,54 @@ header{
               }
             #linkedin{
                 position: absolute;
-                right: -5rem;
-                top: -0.5rem;
-                height: 2.4rem;
-                width: 2.4rem;
+                right: 5rem;
+                top: 1.7rem;
             }
                 #linkedinlink{
                     position: absolute;
 
                     height: 2.4rem;
                     width: 2.4rem;
+
                     background: url(svgconception/linkedin.svg) no-repeat;
                     background-size: 100%;
+                    
                     transition: ease 0.5s;
                 }
                 #linkedinlink:hover{
                     background: url(svgconception/linkedinhover.svg) no-repeat;
                     background-size: 100%;
                 }
+                #devislink{                    
+                    position: absolute;
+                    right: 8rem;
+                    top: 1.9rem;
+                    padding: 0 1rem 0 1rem;
+                
+                    color: white;
+                    font-size: 1.3rem;
+                    font-family: titillium_websemibold;
+                    border: 0.2rem solid transparent;
+                    border-radius: 0.8rem ;
+                    background: linear-gradient(90deg, rgba(191,150,205,1) 0%, rgba(127,57,150,1) 25%, rgba(191,150,205,1) 50%, rgba(127,57,150,1) 75%, rgba(191,150,205,1) 100%);
+                    background-size: 400% 400%;
+                
+                    animation: smoothgradient 5s ease infinite;
+                    transition: ease 0.5s;
+                }
+                    #devislink:hover{
+                        
+                        color: #7F3996;
+                        border: 0.2rem solid #7F3996;
+                        background: white;
+                    }
+                      
 
     /* END NAV TOP PAGE */
 /* END MENU TOP PAGE */
 /* WEB CONTENT */
 #banner{
-    position: relative;
-    top: 6.25rem ;
+    margin-top: 6.25rem ;
 
     font-size: 3.5rem;
     font-family: titillium_websemibold;
@@ -157,14 +179,36 @@ header{
     background-image: url(media/banner.jpg);
     background-repeat: no-repeat;
 
-    padding-top: 10%;
+    padding-top: 13%;
 }
-/* END WEB CONTENT */
+#compétences{
+    display: flex;
+    justify-content: space-evenly;
 
+    margin-top: 5rem;
+    font-size: 1.3rem;
+    color: blue;
+}
+    .compétences_block{
+        display: flex;
+    }
+        .compétences_text{
+            color: #333333;
+            width: 16rem;
+        }
+        .compétences_img{
+            right: 50px;
+            height: 12rem;
+        }
+/* END WEB CONTENT */
+                                                                /* LAPTOP ADJUST */
 @media screen and (min-width: 990px) and (max-width: 1249px){
     #bannerspan{
         font-size: 2.5rem;
     }
+                #devislink{
+                    visibility: hidden;        
+                }
 }
                                                                 /* END BASIC SCREENS */
                                                                 /* MEDIA QUERIES */
@@ -172,124 +216,6 @@ header{
   visibility: hidden;
 }
 
-                                                                /* PHONE SCREENS */
-@media screen and (min-width: 0px) and (max-width: 640px){
-    /* MENU TOP PAGE */
-    header{
-        position: fixed;
-        height: 4.0625rem;
-        margin-bottom: 4.0625rem;
-    }
-        /* WEBSITE LOGO */
-        #logo{
-        width: 5rem;
-        height: 5.68rem;
-
-        margin-left: 2rem;
-        margin-top: 1rem;
-        }
-        /* MENU NAV ICON */
-        #home{
-            width: 2rem;
-            height: 2rem;
-            margin: 0;
-            position: absolute;
-            top: 1rem;
-            left: 8.5rem;
-        }
-        #navigation{
-            width: 1.5rem;
-            height: 1.5rem;
-            right: 1.5rem;
-            top: 1.3rem;
-            visibility: visible;
-            overflow: hidden;
-
-            transition: ease 0.5s;
-        }
-            #navigation:hover{
-                
-            display: flex;
-            flex-direction: column;
-            
-            padding-top: 4rem;
-                top: 0rem;
-                right: 0rem;
-                height: 100rem;
-                width: 15rem;
-
-                border-radius: 0px;
-                border-radius: 0px;
-                background: #ffffff;
-                box-shadow:  -5px 5px 10px #d6d6d6,
-                             5px -5px 10px #ffffff;
-            }
-            
-            #navigation_phone{
-                position: absolute;
-                visibility: visible;
-                top: 0rem;
-                
-                height: 1.5rem;
-                width: 1.5rem;
-                background: url(svgconception/hamburger.svg) no-repeat;
-
-                transition: ease 0.5s;
-            }
-                #navigation:hover #navigation_phone{
-                    top: 1.5rem;
-                    left: 1.5rem;
-                    transform: rotate(180deg);
-                    background: url(svgconception/hamburgerhover.svg) no-repeat;
-                    }
-            .menu{
-                opacity: 0;
-                transition-delay: 0.5s;
-                transition: ease 1s;
-            }
-                #navigation:hover .menu{
-                    opacity: 1;
-                }
-                #portfolio:hover::before{
-                    visibility: hidden;
-                    opacity: 0;
-                }
-                #projet:hover::before{
-                    visibility: hidden;
-                    opacity: 0;
-                }
-                #contact:hover::before{
-                    visibility: hidden;
-                    opacity: 0;
-                }
-
-        #linkedin{
-            visibility: hidden;
-            height: 1.5rem;
-            width: 1.5rem;
-        }
-        /* NAV FOR PHONE MEDIA */
-
-    /* END MENU TOP PAGE */
-    /* CONTENT */
-    #banner{
-        font-size: 1.4rem;
-
-        position: relative;
-        top: 3.875rem;
-        overflow: hidden;
-        visibility: visible;
-        padding: 15%;
-
-        background: url(media/bannerphone.jpg) no-repeat;
-        background-size: contain;
-    }
-
-
-
-
-}
-                                                                /* END PHONE SCREENS */
                                                                 /* TABLET SCREENS */
 @media screen and (min-width: 641px) and (max-width: 989px){
     /* MENU TOP PAGE */
@@ -364,6 +290,7 @@ header{
                 opacity: 0;
                 transition-delay: 0.5s;
                 transition: ease 1s;
+                margin-top: 2rem;
             }
                 #navigation:hover .menu{
                     opacity: 1;
@@ -382,8 +309,147 @@ header{
                 }
 
         #linkedin{
-            visibility: hidden;
+            visibility: visible;
+            right: 5rem;
+            top: 1.25rem;
+
+            height: 1.5rem;
+            width: 1.5rem;
         }
+            #linkedinlink{
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+            #devislink{
+                visibility: hidden;
+            }
+        /* NAV FOR PHONE MEDIA */
+
+    /* END MENU TOP PAGE */
+    /* CONTENT */
+    #banner{
+        font-size: 1.8rem;
+
+        position: relative;
+        top: 62px;
+        overflow: hidden;
+        visibility: visible;
+        padding: 18%;
+
+        background: url(media/bannerphone.jpg) no-repeat;
+        background-size: contain;
+    }
+
+
+
+
+}
+                                                                /* END TABLET SCREENS */         
+                                                                /* PHONE SCREENS */                                                       /* PHONE SCREENS */
+@media screen and (min-width: 0px) and (max-width: 640px){
+    /* MENU TOP PAGE */
+    header{
+        position: fixed;
+        height: 4.0625rem;
+        margin-bottom: 4.0625rem;
+    }
+        /* WEBSITE LOGO */
+        #logo{
+        width: 5rem;
+        height: 5.68rem;
+
+        margin-left: 2rem;
+        margin-top: 1rem;
+        }
+        /* MENU NAV ICON */
+        #home{
+            width: 2rem;
+            height: 2rem;
+            margin: 0;
+            position: absolute;
+            top: 1rem;
+            left: 8.5rem;
+        }
+        #navigation{
+            width: 1.5rem;
+            height: 1.5rem;
+            right: 1.5rem;
+            top: 1.3rem;
+            visibility: visible;
+            overflow: hidden;
+
+            transition: ease 0.5s;
+        }
+            #navigation:hover{
+                
+            display: flex;
+            flex-direction: column;
+            
+            padding-top: 4rem;
+                top: 0rem;
+                right: 0rem;
+                height: 100rem;
+                width: 15rem;
+
+                border-radius: 0px;
+                border-radius: 0px;
+                background: #ffffff;
+                box-shadow:  -5px 5px 10px #d6d6d6,
+                             5px -5px 10px #ffffff;
+            }
+            
+            #navigation_phone{
+                position: absolute;
+                visibility: visible;
+                top: 0rem;
+                
+                height: 1.5rem;
+                width: 1.5rem;
+                background: url(svgconception/hamburger.svg) no-repeat;
+
+                transition: ease 0.5s;
+            }
+                #navigation:hover #navigation_phone{
+                    top: 1.5rem;
+                    left: 1.5rem;
+                    transform: rotate(180deg);
+                    background: url(svgconception/hamburgerhover.svg) no-repeat;
+                    }
+            .menu{
+                opacity: 0;
+                transition-delay: 0.5s;
+                transition: ease 1s;
+                margin-top: 2rem;
+                
+            }
+                #navigation:hover .menu{
+                    opacity: 1;
+                }
+                #portfolio:hover::before{
+                    visibility: hidden;
+                    opacity: 0;
+                }
+                #projet:hover::before{
+                    visibility: hidden;
+                    opacity: 0;
+                }
+                #contact:hover::before{
+                    visibility: hidden;
+                    opacity: 0;
+                }
+
+        #linkedin{
+            top: 1.25rem;
+            right: 6rem;
+        }
+            #linkedinlink{
+                visibility: visible;
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+            #devislink{
+                visibility: hidden;
+            }
         /* NAV FOR PHONE MEDIA */
 
     /* END MENU TOP PAGE */
@@ -392,17 +458,21 @@ header{
         font-size: 1.4rem;
 
         position: relative;
-        top: 62px;
+        top: 3.875rem;
         overflow: hidden;
         visibility: visible;
-        padding: 15%;
+        padding-top: 16%;
 
         background: url(media/bannerphone.jpg) no-repeat;
         background-size: contain;
     }
 
+
+
+
 }
-                                                                /* END TABLET SCREENS */
+                                                                /* END PHONE SCREENS */
+
                                                                 /* ULTRA-WIDE AND 4K SCREENS */
 @media screen and (min-width: 1921px) and (max-width: 6000px){
     #banner{
@@ -553,3 +623,9 @@ header{
 
 
 /** test **/
+
+@keyframes smoothgradient{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
