@@ -12,9 +12,10 @@ body{
     font-family: titillium_webregular;
 }
 
-a{
+a, mark{
 	color: black;
 	text-decoration: none;
+    background-color: transparent;
 }
 
                                                                 /** END GENERAL WEBSITE SETTINGS **/
@@ -161,60 +162,109 @@ header{
     /* END NAV TOP PAGE */
 /* END MENU TOP PAGE */
 /* WEB CONTENT */
-#auto{
-    width: auto;
-}
-#banner{
-    margin-top: 6.25rem ;
-
-    font-size: 3.5rem;
-    font-family: titillium_websemibold;
-    text-align: center;
-    color: white;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 100%;
-    height: 37.5rem;
-    background-size: 100%;
-    background-image: url(media/banner.jpg);
-    background-repeat: no-repeat;
-
-    padding-top: 13%;
-}
-    #banner_span{
-        position: relative;
+    #auto{
+        width: auto;
     }
-#compétences{
-    position: inherit;
-    margin-top: 20rem;
-    display: flex;
-    font-size: 1.3rem;
-    color: blue;
-}
-    .compétences_block{
-        display: inline;
+    #banner{
+        margin-top: 6.25rem ;
+
+        font-size: 3rem;
+        font-family: titillium_websemibold;
+        text-align: center;
+        color: white;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: 50.5vh;
+        background-size: 100%;
+        background-image: url(media/bannerwallpaper2.jpg);
+        background-repeat: no-repeat;
+        background-position: 150% 50%;
+
+        padding-top: 12%;
+        /* box-shadow: 0px 17px 34px #9f3996; */
     }
-        .compétences_text{
-            float: right;
-            color: #333333;
-            width: 16rem;
-        }
-        .compétences_img{
-            float: left;
+
+    #compétences{
+        font-size: 1.3rem;
+        margin: 10vh 0 10vh 0;
+
+        text-align: center;
+    }
+        .compétences_block{
             display: inline-flex;
-            height: 12rem;
+            margin: 5vh 3vw;
         }
+            .compétences_text{
+                float: right;
+                color: #333333;
+                width: 16rem;
+                text-align: left;
+            }
+            .compétences_img{
+                float: left;
+                display: inline-flex;
+                height: 12rem;
+            }
+    #baseline{
+        width: 100%;
+        height: 100vh;
+
+        padding-top: 8rem;
+        padding-left: 8rem;
+        font-size: 3rem;
+        font-family: titillium_websemibold;
+        color: white;
+        background-color: #161616;
+        
+    }
+
+    #selfdescription{        
+        display: inline-flex;
+        justify-content: space-evenly;
+
+        width: 100%;
+
+        margin: 10vh 0 10vh 0;
+    }
+        #selfdescription div{
+            width: 20vw;
+            font-size: 1.2rem;
+        }
+            	#selfdescription div h3, #selfdescription div h3 a{
+                    font-size: 1.5rem;
+                    color: #7f3996;
+                }
+                #selfdescription div strong, #selfdescription div mark{
+                    color: #7f3996;
+                    font-family: titillium_websemibold;
+                }
+                #selfdescription div mark{
+                    font-style: bold;
+                }
+
+    footer{
+        width: 100%;
+        height: 100vh;
+        background-color: #161616;
+    }
+
 /* END WEB CONTENT */
-                                                                /* LAPTOP ADJUST */
+                                                                /* LAPTOP and Large Tablet ADJUST */
 @media screen and (min-width: 990px) and (max-width: 1249px){
     #banner{
-        padding-top: 10%;
+        margin-top: 4rem;
+        padding-top: 20vh;
+
+        background-image: url(media/bannerwallpaper2phone.jpg);
+        background-size: 100%;
+        background-position: 100% 70%;
     }
     #banner_span{
-        font-size: 2.5rem;
+        font-size: 4rem;
     }
                 #devislink{
-                    visibility: hidden;        
+                    display: none;       
                 }
 }
                                                                 /* END BASIC SCREENS */
@@ -336,26 +386,19 @@ header{
     /* CONTENT */
     #banner{
         margin-top: 4.0625rem;
+        width: 100%;
 
         font-size: 1.8rem;
         top: 62px;
         visibility: visible;
-        padding: 18%;
+        padding: 15%;
 
         background: url(media/bannerphone.jpg) no-repeat;
-        background-size: contain;
+        background-size: 100%;
     }
     #compétences{
-        flex-direction: column;
-        align-items: center;
+        margin: 3vh 0 10vh 0;
     }
-        .compétences_block{
-            margin-top: 15%;
-        }
-
-
-
-
 }
                                                                 /* END TABLET SCREENS */         
                                                                 /* PHONE SCREENS */                                                       /* PHONE SCREENS */
@@ -363,24 +406,23 @@ header{
     /* MENU TOP PAGE */
     header{
         position: fixed;
-        height: 4.0625rem;
+        height: 4rem;
+        width: 100%;
         margin-bottom: 4.0625rem;
     }
         /* WEBSITE LOGO */
         #logo{
         width: 5rem;
-        height: 5.68rem;
-
-        margin-left: 2rem;
-        margin-top: 1rem;
+        
+        margin: -2.5rem 0 0 2rem;
         }
         /* MENU NAV ICON */
         #home{
-            width: 2rem;
-            height: 2rem;
+            width: 1.5rem;
+            height: 1.5rem;
             margin: 0;
             position: absolute;
-            top: 1rem;
+            top: 1.25rem;
             left: 8.5rem;
         }
         #navigation{
@@ -414,7 +456,6 @@ header{
             #navigation_phone{
                 position: absolute;
                 visibility: visible;
-                top: 0rem;
                 
                 height: 1.5rem;
                 width: 1.5rem;
@@ -452,7 +493,7 @@ header{
                 }
 
         #linkedin{
-            top: 1.25rem;
+            top: 1.2rem;
             right: 6rem;
         }
             #linkedinlink{
@@ -468,18 +509,52 @@ header{
     /* END MENU TOP PAGE */
     /* CONTENT */
     #banner{
-        margin-top: 4.0625rem;
-        font-size: 1.9rem;
+        margin-top: 4rem;
+        font-size: 1.5rem;
         visibility: visible;
         padding-top: 16%;
 
-        background: url(media/bannerphone.jpg) no-repeat;
-        background-size: contain;
+        width: 100%;
+        height: 40vh;
+        background: url(media/bannerwallpaper2phone.jpg) no-repeat;
+        background-size: 100%;
+        background-position: 100% 50%;
+        padding-top: 12vh;
     }
+        #banner_span{  
+        }
+
     #compétences{
+        display: inline-flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-around;
+        margin: 5vh 0 10vh 0;
     }
+        .compétences_block{
+            align-self: center;
+            display: inline-flex;
+            flex-direction: column;
+            width: 100%;
+        }
+            .compétences_text{
+                clear: right;
+                text-align: center;
+                width: auto;
+            }
+            .compétences_img{
+                clear: left;
+                height: 10rem;
+                width: 10rem;
+                align-self: center;
+            }
+    #baseline{
+        display: block;
+        font-size: 1rem;
+    }
+    #selfdescription{
+        display: none;
+    }
+
 
 
 
