@@ -256,7 +256,46 @@ header{
         
         padding-top: 7vh;
     }
+    #compétencestechniques_title{
+        margin: 8vh 0vh 0vh 0vh;
+        text-align: center;
 
+        font-family: titillium_webbold;
+        font-size: 3rem;       
+        color: #A766BC;
+    }
+    #compétencestechniques{
+        margin: -10vh 0 10vh 0;
+        padding: 10vh 10vw 10vh 10vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        justify-content: space-around;
+        text-align: center;
+
+        width: 100%;
+    }
+        #compétencestechniques div{
+            padding: 3vh 3vh 3vh 3vh;
+            margin: 10vh 0 0 0;
+
+            width: 24vw;
+            background-color: #7f3996;
+            color: white;
+
+            font-size: 1.4rem;
+        }
+        #compétencestechniques div:nth-child(even){
+            background-color: #A766BC;
+        }
+            #compétencestechniques div h3{
+                text-transform: uppercase;
+                margin-bottom: 2vh;
+                
+            }
+            #compétencestechniques div p{
+                font-family: titillium_websemibold;
+            }
     footer{
         margin-top: 20vh;
         width: 100%;
@@ -281,6 +320,9 @@ header{
                 #devislink{
                     display: none;       
                 }
+        #compétencestechniques div{
+            font-size: 1rem;   
+        }
 }
                                                                 /* END BASIC SCREENS */
                                                                 /* MEDIA QUERIES */
@@ -715,7 +757,7 @@ header{
         font-style: normal;
     }
     
-    font-face {
+    @font-face {
         font-family: 'arvoregular';
         src: url('arvo-regular-webfont.woff2') format('woff2'),
              url('arvo-regular-webfont.woff') format('woff');
@@ -724,8 +766,7 @@ header{
     
     }
 
-
-
+    @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 /** test **/
 
 @keyframes smoothgradient{
