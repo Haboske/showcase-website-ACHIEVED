@@ -256,7 +256,7 @@ header{
         
         padding-top: 7vh;
     }
-    #compétencestechniques_title{
+    .compétences_title{
         margin: 8vh 0vh 0vh 0vh;
         text-align: center;
 
@@ -264,7 +264,7 @@ header{
         font-size: 3rem;       
         color: #A766BC;
     }
-    #compétencestechniques{
+    .compétences{
         margin: -10vh 0 10vh 0;
         padding: 10vh 10vw 10vh 10vw;
         display: flex;
@@ -275,7 +275,7 @@ header{
 
         width: 100%;
     }
-        #compétencestechniques div{
+        .compétences div{
             padding: 3vh 3vh 3vh 3vh;
             margin: 10vh 0 0 0;
 
@@ -285,17 +285,27 @@ header{
 
             font-size: 1.4rem;
         }
-        #compétencestechniques div:nth-child(even){
+        .compétences div:nth-child(even){
             background-color: #A766BC;
         }
-            #compétencestechniques div h3{
+            .compétences div h3{
                 text-transform: uppercase;
                 margin-bottom: 2vh;
                 
             }
-            #compétencestechniques div p{
+            .compétences div p{
                 font-family: titillium_websemibold;
             }
+    .compétences_title:nth-child(odd){
+        color: white
+    }
+    .soft{
+        background-color: #7f3996;
+
+    }
+        .soft div:nth-child(odd){
+            background-color: #f6d9ff;
+        }
     footer{
         margin-top: 20vh;
         width: 100%;
