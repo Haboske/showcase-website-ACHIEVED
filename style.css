@@ -296,15 +296,15 @@ header{
             .compétences div p{
                 font-family: titillium_websemibold;
             }
-    .compétences_title:nth-child(odd){
-        color: white
+    .soft_title{
+        color: white;
     }
     .soft{
         background-color: #7f3996;
 
     }
         .soft div:nth-child(odd){
-            background-color: #f6d9ff;
+            background-color: #75328b;
         }
     footer{
         margin-top: 20vh;
