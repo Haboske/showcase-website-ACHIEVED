@@ -1,0 +1,83 @@
+@media screen and (min-width: 641px) and (max-width: 1000px){
+    /* MENU TOP PAGE */
+    /* NAV FOR PHONE MEDIA */
+
+    /* END MENU TOP PAGE */
+    /* CONTENT */
+    #banner{
+        margin-top: 4.0625rem;
+        width: 100%;
+
+        font-size: 1.8rem;
+        top: 62px;
+        visibility: visible;
+        padding: 15%;
+
+        background: url(media/bannerphone.jpg) no-repeat;
+        background-size: 100%;
+    }
+    #compétences{
+        margin: 3vh 0 10vh 0;
+    }
+    #baseline{
+        font-size: 2rem;
+    }
+    #selfdescription div{
+        width: 30rem;
+        margin: 5vh;
+    }
+
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 640px){
+
+    /* END MENU TOP PAGE */
+    /* CONTENT */
+    #banner{
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        visibility: visible;
+        padding-top: 16%;
+
+        width: 100%;
+        height: 40vh;
+        background: url(media/bannerwallpaper2phone.jpg) no-repeat;
+        background-size: 100%;
+        background-position: 100% 50%;
+        padding-top: 12vh;
+    }
+        #banner_span{  
+        }
+
+    #compétences{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 5vh 0 10vh 0;
+    }
+        .compétences_block{
+            align-self: center;
+            display: inline-flex;
+            flex-direction: column;
+            width: 100%;
+        }
+            .compétences_text{
+                clear: right;
+                text-align: center;
+                width: auto;
+            }
+            .compétences_img{
+                clear: left;
+                height: 10rem;
+                width: 10rem;
+                align-self: center;
+            }
+    #baseline{
+        display: block;
+        font-size: 1rem;
+    }
+    #selfdescription{
+        display: none;
+    }
+}
