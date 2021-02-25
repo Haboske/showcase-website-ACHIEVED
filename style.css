@@ -79,17 +79,17 @@ a, mark{
         font-family: titillium_websemibold;
         color: white;
         background-color: #161616;
-        
+
     }
 
-    #selfdescription{        
+    #selfdescription{
         display: inline-flex;
         justify-content: space-around;
         flex-wrap: wrap;
 
         width: 100%;
 
-        margin: 5vh 0 10vh 0;
+        margin: 5vh 0 5vh 0;
         padding: 0 15vw 0 15vw;
     }
         #selfdescription div{
@@ -125,7 +125,7 @@ a, mark{
 
         text-align: center;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: white;
     }
     .compétences_title{
@@ -133,7 +133,7 @@ a, mark{
         text-align: center;
 
         font-family: titillium_webbold;
-        font-size: 3rem;       
+        font-size: 3rem;
         color: #A766BC;
     }
     .compétences{
@@ -164,7 +164,7 @@ a, mark{
             .compétences div h3{
                 text-transform: uppercase;
                 margin-bottom: 2vh;
-                
+
             }
             .compétences div p{
                 font-family: titillium_websemibold;
@@ -205,10 +205,10 @@ a, mark{
         font-size: 4rem;
     }
                 #devislink{
-                    display: none;       
+                    display: none;
                 }
         #compétencestechniques div{
-            font-size: 1rem;   
+            font-size: 1rem;
         }
 }
                                                                 /* END BASIC SCREENS */
@@ -226,7 +226,7 @@ a, mark{
 
                                                                 /* END MEDIA QUERIES */
     @font-face {
- 
+
         font-family: 'titillium_webblack';
         src: url('font/titilliumweb-black-webfont.woff2') format('woff2'),
              url('font/titilliumweb-black-webfont.woff') format('woff');
@@ -241,7 +241,7 @@ a, mark{
         font-style: normal;
     }
     @font-face {
-     
+
         font-family: 'titillium_webbold_italic';
         src: url('font/titilliumweb-bolditalic-webfont.woff2') format('woff2'),
              url('font/titilliumweb-bolditalic-webfont.woff') format('woff');
@@ -256,7 +256,7 @@ a, mark{
         font-style: normal;
     }
     @font-face {
-     
+
         font-family: 'titillium_webXLtIt';
         src: url('font/titilliumweb-extralightitalic-webfont.woff2') format('woff2'),
              url('font/titilliumweb-extralightitalic-webfont.woff') format('woff');
@@ -271,7 +271,7 @@ a, mark{
         font-style: normal;
     }
     @font-face {
-     
+
         font-family: 'titillium_weblight';
         src: url('font/titilliumweb-light-webfont.woff2') format('woff2'),
              url('font/titilliumweb-light-webfont.woff') format('woff');
@@ -293,7 +293,7 @@ a, mark{
         font-style: normal;
     }
     @font-face {
-     
+
         font-family: 'titillium_websemibold';
         src: url('font/titilliumweb-semibold-webfont.woff2') format('woff2'),
              url('font/titilliumweb-semibold-webfont.woff') format('woff');
@@ -313,7 +313,7 @@ a, mark{
              url('arvo-bold-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-    
+
     }
     @font-face {
         font-family: 'arvobold_italic';
@@ -321,7 +321,7 @@ a, mark{
              url('arvo-bolditalic-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-    
+
     }
     @font-face {
         font-family: 'arvoitalic';
@@ -330,14 +330,14 @@ a, mark{
         font-weight: normal;
         font-style: normal;
     }
-    
+
     @font-face {
         font-family: 'arvoregular';
         src: url('arvo-regular-webfont.woff2') format('woff2'),
              url('arvo-regular-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-    
+
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
