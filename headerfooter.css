@@ -1,3 +1,22 @@
+*{
+	-moz-box-sizing: border-box; box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+    font-family: titillium_webregular;
+}
+
+a, mark{
+	color: black;
+	text-decoration: none;
+    background-color: transparent;
+}
+
 header{
     position: fixed;
     top: 0px;
@@ -6,44 +25,62 @@ header{
     background-color: white;
     box-shadow: 0px -100px 200px;
 }
+
     #logo{ /* LOGO */
         width: 11.43rem;
         height: 13rem;
 
         margin-left: 3.5rem;
         margin-top: 2rem;
-        
+        transition: ease 0.5s;
+    }
+    header.sticky #logo{
+        margin-left: 5rem;
+        margin-top: -1.7rem;
+        width: 8rem; 
+        height: 9.09886264217rem;
+        transition: ease 0.5s;
     }
     #home{ /* HOME NAV ICON */
+        position: absolute;
         width: 2.4rem;
         height: 2.4rem;
 
-        margin-left: 18.5rem;
-        margin-top: -13.4rem;
-
-        background: url(svgconception/home.svg) no-repeat;
-
-        transition: ease 0.5s;
+        left: 17.6rem;
+        top: 1.8rem; 
     }
-        #home:hover{
+    
+        #home:hover #homelink{
             background: url(svgconception/homehover.svg) no-repeat;
+
+            transition: ease 0.5s;
+        }
+        #homelink{
+            position: absolute;
+            width: 2.4rem;
+            height: 2.4rem;
+
+            background: url(svgconception/home.svg) ;
         }
     #navigation{ /* NAV TOP PAGE */
         display: flex;
         position: absolute;
-        top: 2.2rem;
-        margin-left: 21.7rem;
+        top: 2.4rem;
+        margin-left: 20.5rem;
     }
         .menu{
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             font-family: titillium_websemibold;
             color: #7F3996;
             text-transform: uppercase;
 
-            margin-left: 3rem;
+            margin-left: 2rem;
 
         }
-            #portfolio::before{
+            .menu:hover{
+                color: #440d57;
+            }
+            /* #portfolio::before{
                 content: "";
                 position: absolute;
                 width: 7.8rem;
@@ -89,7 +126,7 @@ header{
             }
               #contact:hover::before{
                   opacity: 1;
-              }
+              } */
             #linkedin{
                 position: absolute;
                 right: 5rem;
@@ -104,7 +141,7 @@ header{
                     background: url(svgconception/linkedin.svg) no-repeat;
                     background-size: 100%;
                     
-                    transition: ease 0.5s;
+                    
                 }
                 #linkedinlink:hover{
                     background: url(svgconception/linkedinhover.svg) no-repeat;
@@ -125,16 +162,50 @@ header{
                     background-size: 400% 400%;
                 
                     animation: smoothgradient 5s ease infinite;
-                    transition: ease 0.5s;
+                    
                 }
                     #devislink:hover{
-                        
                         color: #7F3996;
                         border: 0.2rem solid #7F3996;
                         background: white;
                     }
-                      
-@media screen and (min-width: 641px) and (max-width: 989px){
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3vh 10vw 3vh 10vw;
+
+        height: 30vh;
+
+        font-size: 1.3rem;
+        color: white;
+        background-color: #161616;
+    }
+        footer nav ul{
+            display: flex;
+            flex-direction: column;
+        }
+            footer nav ul a{
+                text-transform: uppercase;
+                color: white;
+            }
+            footer nav ul a:hover{
+                color: #7f3996;
+            }
+@media screen and (min-width: 1001px) and (max-width: 1249px){    
+    #logo{
+        width: 10rem;
+        height: 11.3735783027rem;
+    }
+    #home{ /* HOME NAV ICON */
+        left: 17rem;
+    }
+    header.sticky #logo{
+        margin-left: 5rem;
+    }
+}                 
+@media screen and (min-width: 641px) and (max-width: 1000px){
     /* MENU TOP PAGE */
     header{
         position: fixed;
@@ -149,15 +220,26 @@ header{
         margin-left: 2rem;
         margin-top: 1rem;
         }
+            header.sticky #logo{
+                margin-left: 2rem;
+                margin-top: -0.9rem;
+
+                width: 5rem;
+                height: 5.68rem;
+            }
         /* MENU NAV ICON */
         #home{
-            width: 2rem;
-            height: 2rem;
+            height: 1.5rem;
+            width: 1.5rem;
             margin: 0;
             position: absolute;
-            top: 1rem;
+            top: 1.25rem;
             left: 8.5rem;
         }
+            #homelink{
+                height: 1.5rem;
+                width: 1.5rem;
+            }
         #navigation{
             width: 1.5rem;
             height: 1.5rem;
@@ -239,7 +321,7 @@ header{
             }
             #devislink{
                 visibility: hidden;
-            }
+            }       
 }
 
 @media screen and (min-width: 0px) and (max-width: 640px){
@@ -254,7 +336,16 @@ header{
         #logo{
         width: 5rem;
         
-        margin: -2.5rem 0 0 2rem;
+        margin: -2.5rem 0 0 1.8rem;
+        }
+        header.sticky #logo{
+            width: 5rem;
+            height: 5.68678915136rem;
+        
+            margin-top: -1rem;
+            margin-left: 1.8rem;
+
+            transition: ease 0.5s;
         }
         /* MENU NAV ICON */
         #home{
@@ -265,6 +356,11 @@ header{
             top: 1.25rem;
             left: 8.5rem;
         }
+        
+            #homelink{
+                height: 1.5rem;
+                width: 1.5rem;
+            }
         #navigation{
             width: 1.5rem;
             height: 1.5rem;
