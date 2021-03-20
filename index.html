@@ -4,18 +4,20 @@
 		<title>b.d Accueil</title>
 		<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial=scale=1.0">
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="headerfooter.css">
-		<link rel="stylesheet" href="mobile.css" media="all and (max-width:1000px)">
-		<link rel="stylesheet" href="font.css">
-
+		<link rel="stylesheet" href="css js/style.css">
+		<link rel="stylesheet" href="css js/headerfooter.css">
+		<link rel="stylesheet" href="css js/mobile.css" media="all and (max-width:1000px)">
+		<link rel="stylesheet" href="css js/font.css">
+		<script type="text/javascript" src="css js/script.js"></script>
     </head>
     <body>
 		<!-- MENU TOP PAGE -->
 		<header>
 
+			
+
 			<!-- WEBSITE LOGO-->
-			<img id="logo" src="svgconception/logobd.svg" alt="logo de la société Développeur Web">
+			<img id="logo" src="css js/svgconception/logobd.svg" alt="logo de la société Développeur Web">
 			<!-- MENU NAV ICON-->
 			<nav id="home" alt="icône de navigation vers la page d'Accueil">
 				<a href="#" id="homelink"></a>
@@ -33,7 +35,7 @@
 				<nav id="navigation_phone">
 
 				</nav>
-				<a class="menu" href="index.html">
+				<a class="menu" href="portfolio/portfolio.html">
 					<span id="portfolio">portfolio</span>
 				</a>
 				<a class="menu" href="index.html">
@@ -49,12 +51,7 @@
 
 		</header>
 		<!-- END MENU TOP PAGE -->
-		<script type="text/javascript">
-			window.addEventListener("scroll", function(){
-				var header = document.querySelector("header");
-				header.classList.toggle("sticky", window.scrollY > 190);
-			})
-		</script>
+		
 
 		<!-- CONTENT -->
 		<section id="banner">
@@ -65,31 +62,32 @@
 
 
 		<main>
-			<section id="compétences">
+			<article id="compétences">
 				<div class="compétences_block">
-					<img src="svgconception/diplome.svg" class="compétences_img">&ensp;&ensp;&ensp;
+					<img src="css js/svgconception/diplome.svg" class="compétences_img">&ensp;&ensp;&ensp;
 					<h3 class="compétences_text">
 						Actuellement <strong>en formation</strong> pour le Titre Professionnel de niveau 5 : Développeur Web et Web Mobile
 					</h3>
 				</div>
 				<div class="compétences_block">
-					<img src="media/openclassrooms.png" class="compétences_img">&ensp;&ensp;&ensp;
+					<img src="css js/media/openclassrooms.png" class="compétences_img">&ensp;&ensp;&ensp;
 					<h3 class="compétences_text">
 						&#43; <strong>10 Certificats en dévelopemment web</strong> et graphisme &#40;Openclassroom&#41;
 					</h3>
 				</div>
 				<div class="compétences_block">
-					<img src="svgconception/agile.svg" class="compétences_img">&ensp;&ensp;&ensp;
+					<img src="css js/svgconception/agile.svg" class="compétences_img">&ensp;&ensp;&ensp;
 					<h3 class="compétences_text">
 						Je me forme aux méthodologies Agile et S.C.R.U.M afin d'optimiser mon travail.
 					</h3>
 				</div>
-			</section>
+			</article>
 
 			<section id="baseline">
-				<h2>Je réfléchis aux visuels les plus simples possibles pour une navigation optimale.</h2>
+				<h2>Je réfléchis aux visuels les plus simples possibles pour une navigation agréable.</h2>
 			</section>
-			<section id="selfdescription">
+
+			<article id="selfdescription">
 				<div>
 					<h3>Qui suis-je ?</h3>
 					<strong>Bryan Delaitre</strong>, <mark alt="jeunes développeur dynamique">19 ans</mark>, et je suis développeur web junior en région PACA <strong>à la recherche d'un stage.</strong>
@@ -103,7 +101,7 @@
 					<br>
 					<p>Je travaille également au mieux pour progresser et me permettre de vous proposer un travail raffiné, une interface agréable sur laquelle surfer. L'expérience utilisateur m'est primordiale.</p>
 				</div>
-			</section>
+			</article>
 			<a href="#">Accéder à mon portfolio</a>
 
 			<article class="compétences_article soft">
@@ -111,7 +109,7 @@
 				<section class="compétences ">		
 					<div>
 						<h3>Patience et Problem Solving</h3>
-						<p>En tant que développeur on se doit d'être patient en tout point, des compléxités se déclarant souvent en code. Il est chaque jour question de répondre à des problèmes aussi difficiles soient-ils. Il est important de savoir se documenter et se renseigner.</p>
+						<p>En tant que développeur on se doit d'être patient en tout point, des compléxités se déclarant souvent en code. Il est chaque jour question de répondre à des problèmes aussi difficiles et bêtes soient-ils. Il est important de savoir se documenter et se renseigner.</p>
 					</div>
 					<div>
 						<h3>Gestion du temps</h3>
@@ -155,9 +153,7 @@
 					</div>
 				</section>
 			</article>
-
 			
-
 			<footer>
 				<nav>
 					<ul>
@@ -174,10 +170,7 @@
 				</nav>
 				&copy;Copyright - 2021 - Bryan DELAITRE 
 			</footer>
-
-
-
+			
 		</main>
-
     </body>
 </html>

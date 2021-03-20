@@ -24,6 +24,8 @@ header{
     width: 100%;
     background-color: white;
     box-shadow: 0px -100px 200px;
+
+    z-index: 100;
 }
 
     #logo{ /* LOGO */
@@ -195,14 +197,21 @@ header{
             }
 @media screen and (min-width: 1001px) and (max-width: 1249px){    
     #logo{
-        width: 10rem;
-        height: 11.3735783027rem;
+        margin-left: 5rem;
+        width: 8rem;
+        height: 9.09886264217rem;
     }
     #home{ /* HOME NAV ICON */
         left: 17rem;
     }
     header.sticky #logo{
         margin-left: 5rem;
+        margin-top: -1.8rem;
+        width: 8rem;
+        height: 9.09886264217rem;
+    }
+    #devislink{
+        display: none;
     }
 }                 
 @media screen and (min-width: 641px) and (max-width: 1000px){
@@ -321,7 +330,10 @@ header{
             }
             #devislink{
                 visibility: hidden;
-            }       
+            }   
+        footer{
+            font-size: 1rem;
+        }    
 }
 
 @media screen and (min-width: 0px) and (max-width: 640px){
@@ -440,4 +452,13 @@ header{
             #devislink{
                 visibility: hidden;
             }
-        }
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1vh 20vw 1vh 20vw;
+    
+        height: 40vh;
+            
+        font-size: 1rem;
+    }        
+}

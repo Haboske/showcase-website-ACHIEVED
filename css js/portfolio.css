@@ -1,0 +1,315 @@
+:root{
+    overflow-x: hidden;
+}
+
+section:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.25rem;
+   
+    height: 95vh;
+    width: 100%;
+
+    font-size: 2.5rem;
+    color: #7f3996;  
+    text-shadow: 0px 4px 6px rgba(136, 136, 136, 0.397);
+    background: url('../portfolio/media/portfolio.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    main section h1{
+        margin-left: 30rem;
+    }
+main article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+    main article #h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 0;
+
+        background: linear-gradient(360deg, rgba(225,75,156,1) 0%, rgba(47,34,172,1) 100%);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        width: 100vw;
+        height: 53vh;
+    }
+        main article div img{
+            width: 8rem;
+            height: 8rem;
+        }
+        main article div h2{
+            font-size: 4rem;
+            margin-left: 3vw;
+            color: white;
+        }
+    article section{
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+        article section a{
+            height: 100%;
+            width: 33.33vw;
+            min-width: 25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transition: ease 0.5s;
+        }
+            article section a:hover{
+                transform: scale(1.1);
+                z-index: 1;
+            }
+            #party{
+                background-image: url(../portfolio/media/party.jpg);
+
+            }
+            #bd{
+                background-image: url(../portfolio/media/bd.jpg);
+            }
+            #raceers{
+                background-image: url(../portfolio/media/raceers.jpg);
+            }
+                #party:hover{
+                    background-image: url(../portfolio/media/partyhover.jpg);
+                }
+                #bd:hover{
+                    background-image: url(../portfolio/media/bdhover.jpg);
+                }
+                #raceers:hover{
+                    background-image: url(../portfolio/media/raceershover.jpg);
+                }
+            article section a div{
+                width: 20vh;
+                height: 20vh;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 40%;
+
+                transition: ease 0.5s;
+            }
+                article section a:hover div{
+                    transform: scale(1.3);
+                    margin-bottom: 50%;
+                }
+                #party div{
+                    background-image: url(../portfolio/media/party.svg);
+                }
+                #party:hover div{
+                    background-image: url(../portfolio/media/partyhover.svg);
+                }
+                #bd div{
+                    background-image: url(../portfolio/media/bd.svg);
+                }
+                #bd:hover div{
+                    background-image: url(../portfolio/media/bdhover.svg);
+                }
+                #raceers div{
+                    background-image: url(../portfolio/media/raceers.svg)
+                }
+                #raceers:hover div{
+                    background-image: url(../portfolio/media/raceershover.svg);
+                }
+            article section a h4{
+                opacity: 0;
+                color: white; 
+                text-align: center;
+                width: 70%;
+                margin-bottom: 10%;
+
+                transition: ease 0.5s;
+            }
+            article section a:hover h4{
+                opacity: 1;
+            }
+
+
+/* @media screen adn (min-width: 1250px){
+    article section a:hover div{
+        t
+    }
+}             */
+@media screen and (min-width: 1001px) and (max-width: 1249px){
+    main article div h2{
+        font-size:3.5rem;
+        width: 60vw;
+    }
+    article section a{
+        width: 33.33vw;
+        min-width: 15rem;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1000px){
+    section:first-child{
+        margin-top: 4.0625rem;
+        background-position: 30% 100%;
+    }
+    main section h1{
+        font-size: 2.5rem;
+        margin-left: 10rem;
+        width: 50vw;
+        text-align: right;
+    }
+        main article div h2{
+            font-size:3rem;
+            width: 60vw;
+        }
+    article section{
+        flex-direction: column;
+        height: 200vh;
+    }
+        article section a{
+            width: 100vw;
+            height: 33.33%;
+            justify-content: center;
+        }
+            article section a:hover{
+                transform: scale(1);
+            }
+            #party{
+                background-image: url(../portfolio/media/partyhover.jpg);
+
+            }
+            #bd{
+                background-image: url(../portfolio/media/bdhover.jpg);
+            }
+            #raceers{
+                background-image: url(../portfolio/media/raceershover.jpg);
+            }
+            article section a div{
+                margin-bottom: 0%;
+                animation: float 6s ease-in-out infinite;
+            }
+                article section a:hover div{
+                    margin-bottom: 10%;
+                }
+            article section a h4{
+                margin-bottom: 0%;
+            }
+            #party div{
+                background-image: url(../portfolio/media/partyhover.svg);
+            }
+            #bd div{
+                background-image: url(../portfolio/media/bdhover.svg);
+            }
+            #raceers div{
+                background-image: url(../portfolio/media/raceershover.svg)
+            }
+        article section a h4{
+            opacity: 1;
+            margin-top: 2vh;
+            text-shadow: 0px 1px 10px rgb(0, 0, 0);
+        }
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px){
+    section:first-child{
+        margin-top: 4.0625rem;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 25% 100%;
+    }
+    main section h1{
+        font-size: 2.3rem;
+        margin-left: 0rem;
+        width: 60vw;
+        text-align: center;
+    }
+
+    main article #h2{
+        flex-direction: column;
+    }
+    main article div img{
+        width: 4rem;
+        height: 4rem;
+    }
+    main article div h2{
+        margin-top: 5vh;
+        margin-left: 0;
+
+        font-size: 2rem;
+        text-align: center;
+        width: 70vw;
+    }
+    article section{
+        flex-direction: column;
+        height: 200vh;
+    }
+        article section a{
+            width: 100%;
+            min-width: 0;
+            height: 33.33%;
+            justify-content: center;
+        }
+            article section a:hover{
+                transform: scale(1);
+            }
+            #party{
+                background-image: url(../portfolio/media/partyhover.jpg);
+
+            }
+            #bd{
+                background-image: url(../portfolio/media/bdhover.jpg);
+            }
+            #raceers{
+                background-image: url(../portfolio/media/raceershover.jpg);
+            }
+            article section a div{
+                margin-bottom: 0%;
+                animation: float 6s ease-in-out infinite;
+            }
+                article section a:hover div{
+                    margin-bottom: 10%;
+                }
+            article section a h4{
+                margin-bottom: 0%;
+            }
+            #party div{
+                background-image: url(../portfolio/media/partyhover.svg);
+            }
+            #bd div{
+                background-image: url(../portfolio/media/bdhover.svg);
+            }
+            #raceers div{
+                background-image: url(../portfolio/media/raceershover.svg)
+            }
+        article section a h4{
+            opacity: 1;
+            margin-top: 2vh;
+            text-shadow: 0px 1px 10px rgb(0, 0, 0);
+        }
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
