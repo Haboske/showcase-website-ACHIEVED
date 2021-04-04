@@ -23,7 +23,7 @@ header{
     height: 6.25rem;
     width: 100%;
     background-color: white;
-    box-shadow: 0px -100px 200px;
+    box-shadow: 0px -0.1px 30px #d6d6d6;
 
     z-index: 100;
 }
@@ -195,7 +195,7 @@ header{
             footer nav ul a:hover{
                 color: #7f3996;
             }
-@media screen and (min-width: 1001px) and (max-width: 1249px){    
+@media screen and (min-width: 1001px) and (max-width: 1500px){    
     #logo{
         margin-left: 5rem;
         width: 8rem;
