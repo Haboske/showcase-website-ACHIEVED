@@ -2,56 +2,18 @@
 <html>
 	<head>
 		<title>b.d Accueil</title>
-		<meta charset="utf-8">
-			<meta name="viewport" content="width=device-width, initial=scale=1.0">
 		<link rel="stylesheet" href="css js/style.css">
-		<link rel="stylesheet" href="css js/headerfooter.css">
 		<link rel="stylesheet" href="css js/mobile.css" media="all and (max-width:1000px)">
-		<link rel="stylesheet" href="css js/font.css">
-		<script type="text/javascript" src="css js/script.js"></script>
+		<?php
+			include "assets/head.php";
+		?>
     </head>
     <body>
-		<!-- MENU TOP PAGE -->
-		<header>
-
-			
-
-			<!-- WEBSITE LOGO-->
-			<img id="logo" src="css js/svgconception/logobd.svg" alt="logo de la société Développeur Web">
-			<!-- MENU NAV ICON-->
-			<nav id="home" alt="icône de navigation vers la page d'Accueil">
-				<a href="#" id="homelink"></a>
-			</nav>
-			<nav id="linkedin">
-				<a href="#" id='linkedinlink'></a>
-			</nav>
-			<a href="#" id="devislink">Acc&eacute;der &agrave; mon CV</a>
-
-			<!-- NAV FOR PHONE MEDIA -->
-
-
-			<!-- NAV TOP PAGE-->
-			<nav id="navigation">
-				<nav id="navigation_phone">
-
-				</nav>
-				<a class="menu" href="portfolio/portfolio.html">
-					<span id="portfolio">portfolio</span>
-				</a>
-				<a class="menu" href="index.html">
-					<span id="projet">&agrave; la recherche d'un stage</span>
-				</a>
-				<a class="menu" href="index.html">
-					<span id="contact">contactez-moi</span>
-				</a>
-
-			</nav>
-			<!-- END NAV TOP PAGE-->
-
-
-		</header>
-		<!-- END MENU TOP PAGE -->
-		
+	<!-- Intégration du header dans la page -->
+	<?php
+		include 'assets/header.php';
+	?>
+	<!-- Fin de l'intégration du header dans la page -->	
 
 		<!-- CONTENT -->
 		<section id="banner">
@@ -154,23 +116,11 @@
 				</section>
 			</article>
 			
-			<footer>
-				<nav>
-					<ul>
-						<a href="#">portfolio</a>
-						<a href="#">&agrave; la recherche d'un stage</a>
-						<a href="#">contactez-moi</a>
-					</ul>
-				</nav>
-				<nav>
-					<ul>
-						<a href="#">mentions l&eacute;gales</a>
-						<a href="#">rgpd</a>
-					</ul>
-				</nav>
-				&copy;Copyright - 2021 - Bryan DELAITRE 
-			</footer>
+	
 			
 		</main>
+	<?php
+		include 'assets/footer.php';
+	?>
     </body>
 </html>
