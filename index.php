@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>b.d Accueil</title>
+		<title>Développeur Web Bryan DELAITRE - Accueil</title>
 		<link rel="stylesheet" href="css js/style.css">
-		<link rel="stylesheet" href="css js/mobile.css" media="all and (max-width:1000px)">
 		<?php
 			include "assets/head.php";
 		?>
