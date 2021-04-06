@@ -23,11 +23,11 @@
         </section>
         <article>
             <div id="h2">
-                <img src="../css js/svgconception/design.svg">
+                <img src="css js/svgconception/design.svg">
                 <h2>Développement web et maquettage</h2>
             </div>
             <section>
-                <a href="#" id="party">
+                <a href="party.php" id="party">
                     <div></div>
                     <h4>Réalisation d'une maquette pour application mobile sur Adobe XD</h4>
                 </a>

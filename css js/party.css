@@ -1,0 +1,80 @@
+#banner{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10vh 0 10vh 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.25rem;
+    background: linear-gradient(90deg, rgba(227,147,53,1) 0%, rgba(222,117,83,1) 100%);
+}
+
+#banner img{
+    width: 21rem;
+}
+#banner div{
+    display: flex;
+    flex-direction: column;
+    width: 34.1875rem;
+    margin-left: 11.5vw;
+    font-size: 1.5rem;
+    color: white;
+    font-family: titillium_weblight;
+}
+#banner div img{
+    margin-bottom: 5vh;
+    width: 100%;
+}
+article
+@media screen and (min-width: 1001px) and (max-width: 1249px){}
+
+@media screen and (min-width: 641px) and (max-width: 1000px){
+    #banner{
+        margin-top: 4.0625rem;
+        flex-direction: column;
+        padding: 25vh 0 15vh 0;
+    }
+    #banner div{
+        width: 70vw;
+        order: 1;
+        margin-left: 0;
+        font-size: 1.5rem;
+        margin-bottom: 25vh;
+    }
+    #banner div img{
+        order: 1;
+    }
+    #banner div h2{
+        order: 2;
+    }
+    #banner img{
+        order: 2;
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px){
+    #banner{
+        margin-top: 4rem;
+        flex-direction: column;
+        padding: 15vh 0 15vh 0;
+        background: linear-gradient(190deg, rgba(227,147,53,1) 0%, rgba(222,117,83,1) 100%);
+
+    }
+    #banner div{
+        width: 70vw;
+        order: 1;
+        margin-left: 0;
+        font-size: 1rem;
+        margin-bottom: 15vh;
+    }
+    #banner div img{
+        order: 1;
+    }
+    #banner div h2{
+        order: 2;
+    }
+    #banner img{
+        order: 2;
+        width: 18rem;
+    }
+}
