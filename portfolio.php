@@ -29,7 +29,7 @@
                     <div></div>
                     <h4>Réalisation d'une maquette pour application mobile sur Adobe XD</h4>
                 </a>
-                <a href="lol.php" id="bd">
+                <a href="bdwd.php" id="bd">
                     <div></div>
                     <h4>Création de mon site web portfolio from scratch entièrement codé main sans framework</h4>
                 </a>
