@@ -1,0 +1,200 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+#banner{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10vh 0 10vh 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.25rem;
+    width: 100%;
+    background: linear-gradient(41deg, rgba(127,57,150,1) 0%, rgba(210,115,241,1) 100%);
+}
+    #banner img{
+        width: 41rem;
+    }
+    #banner h2{
+        width: 34.1875rem;
+        font-size: 3rem;
+        color: white;
+        font-family: titillium_weblight;
+    }
+    article#article1{
+        padding : 10vh 15vw 10vh 15vw;
+        width: 100vw;  
+    }
+    article#article1 h2{
+        letter-spacing: 1px;
+        width: 50vw;
+        font-size: 4.5rem;
+        font-family: Montserrat;
+        font-weight: 500;
+        color: rgba(127,57,150,1);
+    }
+    article#article1 h3{
+        margin-top: 5vh;
+        margin-left: auto;
+        width: 45vw;
+        font-size: 2.5rem;
+        font-family: Montserrat;
+        font-weight: 400;
+        text-align: end;
+    }
+    #tools{
+        padding: 5vh 15vw; 
+        background-color: transparent;
+        height: fit-content;
+    }
+    #tools #cadre{
+        width: 63vw;
+        columns: 2 30vw;
+        column-gap: 3vw;
+        
+        margin: 0;
+        height: 185vh;
+        /* display: flex;
+        flex-direction: column; */
+        
+    }
+    article#tools div.cat{
+        width: 30vw;
+        background-color: white;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.24);
+        margin-bottom: 5vh;
+        break-inside: avoid;
+        padding: 4vh 2vw;
+    }
+    article#tools div.cat h3{
+        color: rgba(127, 57, 150, 0.69);
+        font-family: Titillium_WebBold;
+        letter-spacing: 0.205rem;
+        font-weight: 700;
+        font-size: 2.7rem;
+        margin-bottom: 2vh;
+    }
+    article#tools div div div.tycoon img.tycoon{
+        width: 4rem;
+        margin-right: 1rem;
+    }
+    article#tools div div div.tycoon{
+        margin-top: 10vh;
+        display: flex;
+        align-items: center;
+    }
+    article#tools div div div{
+        justify-content: flex-start;
+        margin-top: 3vh;
+        /* padding: 2vh 3vw 2vh 3vw; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 100%;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    article#tools div div div h4{
+        color: black;
+        font-size: 1.9rem;
+        font-family: titillium_webbold;
+        margin-bottom: 0.5rem;
+        width: 26rem;
+    }
+    article#tools div div div img{
+        width: 20%;
+    }
+    article#tools div div div p{
+        font-family: Montserrat;
+        width: 75%;
+        margin-left: 5%;
+        font-size: 1.6rem;
+    }
+    article#tools div div div .color{
+        margin-top: 0;
+        margin-bottom: 2vh;
+        background-color: white;
+    }
+    article#tools div div div .color img{
+        position: absolute;
+        height: 4.5rem;
+        width: auto;
+        z-index: 1;
+    }
+    article#tools div div div .color p{
+        font-family: titillium_websemibold;
+        margin-left: 17%;
+        font-size: 3rem;
+        z-index: 2;
+        color: white;
+        text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.397);
+    }
+    article#tools div div div .color~p{
+        margin-left: 0;
+        font-family: titillium_websemibold;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    article#tools div #polices p{
+        margin-left: 0;
+        color: black;
+    }  
+    article#tools div #polices div{
+        display: flex;
+        flex-direction: column;
+    } 
+    article#tools div #polices #mdiv p{
+        margin-left: auto;
+        width: fit-content;
+        height: fit-content;
+    } 
+    article#tools div div div #tbold{
+        font-family: 'titillium_webbold';
+        font-size: 2.5rem;
+    }
+    article#tools div div div #tsemibold{
+        font-family: 'titillium_websemibold';
+        margin-left: 0.12rem;
+        font-size: 2rem;
+    }
+    article#tools div div div #treg{
+        font-family: 'titillium_webregular';
+        margin-left: 0.15rem;
+        margin-top: 0.25rem;
+        font-size: 1.6rem;
+    }
+    article#tools div div div #tlight{
+        font-family: 'titillium_weblight';
+        margin-left: 0.2rem;
+        margin-top: 0.5rem;
+        font-size: 1.3rem;
+    }
+    article#tools div div div #mbold{
+        font-family: Montserrat;
+        font-weight: bold;
+    }
+    article#tools div div div #mreg{
+        font-family: Montserrat;
+        font-weight: 500;
+    }
+    article#tools div div div #mlight{
+        font-family: Montserrat;
+        font-weight: 200;
+    }
+
+    /* div {
+        width: 150px;
+        background: #EC985A;
+        color: white;
+        margin: 0 1rem 1rem 0;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-family: system-ui;
+        font-weight: 900;
+        font-size: 2rem;
+      } */
+@media screen and (min-width: 641px) and (max-width: 1000px){}
+@media screen and (min-width: 0px) and (max-width: 640px){}
