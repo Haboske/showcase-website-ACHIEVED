@@ -56,18 +56,21 @@ main{
         column-gap: 3vw;
         
         margin: 0;
-        height: 185vh;
+        height: fit-content;
+    
         /* display: flex;
         flex-direction: column; */
         
     }
     article#tools div.cat{
-        width: 30vw;
+        width: 100%;
+        /* min-width: 30rem; */
         background-color: white;
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.24);
         margin-bottom: 5vh;
         break-inside: avoid;
         padding: 4vh 2vw;
+        border-radius: 1rem;
     }
     article#tools div.cat h3{
         color: rgba(127, 57, 150, 0.69);
@@ -101,7 +104,7 @@ main{
         font-size: 1.9rem;
         font-family: titillium_webbold;
         margin-bottom: 0.5rem;
-        width: 26rem;
+        width: 100%;
     }
     article#tools div div div img{
         width: 20%;
@@ -140,6 +143,7 @@ main{
     article#tools div #polices p{
         margin-left: 0;
         color: black;
+        width: fit-content;
     }  
     article#tools div #polices div{
         display: flex;
@@ -150,38 +154,113 @@ main{
         width: fit-content;
         height: fit-content;
     } 
+    #graphism{
+        background-color: white;
+        background-image: url(svgconception/designdiv.svg);
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-position: 85% 10%;
+    }
+    #dev{
+        background-color: white;
+        background-image: url(svgconception/devdiv.svg);
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: 85% 90%;
+    }
+    #prod{
+        background-color: white;
+        background-image: url(svgconception/proddiv.svg);
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-position: 95% 40%;
+    }
+    #colors{
+        background-color: white;
+        background-image: url(svgconception/colordiv.svg);
+        background-repeat: no-repeat;
+        background-size: 20%;
+        background-position: 65% 10%;
+    }
+    #polices{
+        background-color: white;
+        background-image: url(svgconception/policediv.svg);
+        background-repeat: no-repeat;
+        background-size: 15%;
+        background-position: 75% 8%;
+    }
     article#tools div div div #tbold{
         font-family: 'titillium_webbold';
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+    #tbold:after{
+        content: "(bold)";
+        position: relative;
+        font-size: 1rem;
     }
     article#tools div div div #tsemibold{
         font-family: 'titillium_websemibold';
         margin-left: 0.12rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
+    #tsemibold:after{
+        font-size: 1rem;
+        content: "(semibold)";
+    }
+    
     article#tools div div div #treg{
         font-family: 'titillium_webregular';
         margin-left: 0.15rem;
         margin-top: 0.25rem;
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
+    #treg:after{
+        font-size: 1rem;
+        content: "(regular)";
+    }
+    
     article#tools div div div #tlight{
         font-family: 'titillium_weblight';
-        margin-left: 0.2rem;
+        margin-left: 0.22rem;
         margin-top: 0.5rem;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
+    #tlight:after{
+        font-size: 1rem;
+        content: "(light)";
+    }
+    
     article#tools div div div #mbold{
         font-family: Montserrat;
         font-weight: bold;
+        font-size: 3rem;
+    }
+    #mbold:before{
+        content: "(bold)";
+        position: relative;
+        font-size: 1rem;
     }
     article#tools div div div #mreg{
         font-family: Montserrat;
         font-weight: 500;
+        margin-top: 0.25rem;
+        font-size: 2rem;
+    }
+    #mreg:before{
+        content: "(500)";
+        position: relative;
+        font-size: 1rem;
     }
     article#tools div div div #mlight{
         font-family: Montserrat;
-        font-weight: 200;
+        font-weight: 300;
+        margin-top: 0.5rem;
+        font-size: 1.6rem;
+    }
+    #mlight:before{
+        content: "(300)";
+        position: relative;
+        font-size: 1rem;
     }
 
     /* div {
@@ -196,5 +275,156 @@ main{
         font-weight: 900;
         font-size: 2rem;
       } */
-@media screen and (min-width: 641px) and (max-width: 1000px){}
-@media screen and (min-width: 0px) and (max-width: 640px){}
+@media screen and (min-width: 1001px) and (max-width: 1249px){
+    #banner img{
+        width: 30rem;
+    }
+    #banner h2{
+        width: 20rem;
+        font-size: 2rem;
+    }
+    article#tools div.cat h3{
+        font-size: 2rem; 
+    }
+    article#tools div div div h4{
+        font-size: 1.5rem;
+    }
+    article#tools div div div p{
+        font-size: 1rem;
+    }
+    article#tools div div div.color{
+        width: 60%;
+    }
+    article#tools div div div .color img{
+        width: 15%;
+    }
+    article#tools div div div .color p{
+        font-size: 1.8rem;
+        margin: 6% 0 auto 20%;
+    }
+    article#tools div div div #tbold,article#tools div div div #mbold{
+        font-size: 2rem;
+    }
+    article#tools div div div #tsemibold{
+        font-size: 1.6rem;
+    }
+    article#tools div div div #treg,article#tools div div div #mreg{
+        font-size: 1.3rem;
+    }
+    article#tools div div div #tlight,article#tools div div div #mlight{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1000px){
+    #banner{
+        margin-top: 4.0625rem;
+    }
+    #banner img{
+        margin-top: 10vh;
+    }
+    #banner h2{
+        text-align: center;
+        margin: 0 0;
+    }
+    article#article1 h2{
+        font-size: 3rem;
+    }
+    #tools #cadre{
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        columns: 0;
+        column-gap: 0;
+    }
+    article#tools div.cat{
+        padding: 4vh 4vh;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 640px){
+    #banner{
+        margin-top: 4.0625rem;
+    }
+    #banner img{
+        margin-top: 10vh;
+        width: 20rem;
+    }
+    #banner h2{
+        font-size: 2.5rem;
+        padding: 0 5vw;
+        text-align: center;
+        margin: 0 0;
+    }
+    article#article1{
+        padding: 5vh 5vh 5vh 5vh;
+    }
+    article#article1 h2{
+        font-size: 1.6rem;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    article#article1 h3{
+        font-size: 1.4rem;
+        width: 100%;
+        margin: 5vh 0 0 0;
+        text-align: right;
+    }
+    #tools #cadre{
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        columns: 0;
+        column-gap: 0;
+    }
+    article#tools{
+        padding: 2vh 2vh 2vh 2vh;
+        width: 100vw;
+    }
+    article#tools #cadre{
+        margin: 0 0 0 0;
+        width: 100%;
+    }
+    article#tools div div div.color{
+        width: 60%;
+    }
+    article#tools div div div .color img{
+        width: 50%;
+    }
+    article#tools div div div .color p{
+        font-size: 1.8rem;
+        margin: 8% 0 auto 35%;
+    }
+    article#tools div div div .color~p{
+        font-size: 1rem;
+    }
+    article#tools div div div.tycoon img.tycoon{
+        width: 2rem;
+    }
+    article#tools div div div.cat_child{
+        margin-top: 2vh;
+    }
+    article#tools div div div h4{
+        font-size: 1.5rem;
+    }
+    article#tools div.cat{
+        padding: 4vh 4vh;
+    }
+    article#tools div.cat h3{
+        font-size: 1.5rem;
+    }
+    article#tools div div div p{
+        font-size: 1rem;
+    }
+    article#tools div div div #tbold,article#tools div div div #mbold{
+        font-size: 2rem;
+    }
+    article#tools div div div #tsemibold{
+        font-size: 1.6rem;
+    }
+    article#tools div div div #treg,article#tools div div div #mreg{
+        font-size: 1.3rem;
+    }
+    article#tools div div div #tlight,article#tools div div div #mlight{
+        font-size: 1rem;
+    }
+}
