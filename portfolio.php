@@ -4,6 +4,7 @@
 		<title>Portfolio du Développeur Web de Toulon</title>
         
 		<link rel="stylesheet" href="css js/portfolio.css">
+        <link rel="canonical" href="https://bryandelaitre.com/Portfolio" />
         <?php
             require "assets/head.php";
         ?>
@@ -54,7 +55,7 @@
             <p>En effet plusieurs pages du site ne sont pas encore développées mais ça ne saurait tarder !</p>
             <ol>
                 <li>Si il s'agit de la page "Raceers", il est question d'un gros projet en développement avec un énorme travail de Back-End qui prendra plusieurs années à développer. Sa présentation arrive dans quelques semaines, voyez ça comme un leak 😘.</li>
-                <li>&Eacute;tant à la recherche d'un stage, j'ai dû accélérer le développement de mon site internet et donc appliquer des priorités.</li>
+                <li>&Eacute;tant à la recherche d'un stage, j'ai dû accélérer le développement de mon site internet et donc appliquer des priorités. De grosses améliorations sont à venir (SEO inexistante, CSS non otpimisé, JS non optimisé, PhP non optimisé, XML inexistant)</li>
                 <li>Je fais actuellement mes études pour devenir développeur et j'ai par conséquent très peu de temps à consacrer sur mes projets persos, leur développement est donc fortement ralentit.</li>
                 <li>Mon portofolio est un projet de longue durée. Il se verra être le sujet de plusieurs versions avec des améliorations back-end à venir, et une optimisation du front-end actuel.</li>
                 <li>De nouvelles pages arriveront bientôt avec de nouveaux projets à présenter (surtout en Backend) donc patience !</li>

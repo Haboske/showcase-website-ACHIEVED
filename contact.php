@@ -6,8 +6,10 @@
         require 'assets/head.php';
     ?>
     <link rel="stylesheet" href="css js/contact.css">
+    <link rel="canonical" href="https://bryandelaitre.com/formulaire-de-contact" />
     <script type="text/javascript" src="css js/contact.js"></script>
     <title>Document</title>
+    <script></script>
 </head>
 <body>
     <?php require 'assets/header.php'; ?>
@@ -20,21 +22,24 @@
             <?php 
                 require "php/envoi.php";
             ?>
-            <form id="contact-form" method="post">
+            <form id="contact_form" method="post">
                 <h2>formulaire</h2>
 
                 <h3>informations</h3>
                 <div>
                     <!-- <label for="userName">Nom</label> -->
                     <input type="text" name="contact_name" placeholder="Nom Prénom" id="contact_name">
+                    <p class="error_message" id="contact_name_error">ex : (Jean Dupont)</p>
                 </div>
                 <div>
                     <!-- <label for="email">Email</label> -->
                     <input type="mail" name="contact_email" placeholder="Email" id="contact_email">
+                    <p class="error_message" id="contact_email_error">ex : (monprenom.monnom@monemail.com)</p>
                 </div>
                 <div>  
                     <!-- <label for="contact-phone">T&eacute;l&eacute;phone</label> -->
                     <input type="tel" name="contact_phone" placeholder="Numéro de téléphone" id="contact_phone">
+                    <p class="error_message" id="contact_phone_error">ex : (06 12 34 56 78 ou 0612345678)</p>
                 </div>
 
                 <h3></h3>

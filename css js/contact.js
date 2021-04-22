@@ -38,5 +38,34 @@ $(document).ready(function(){
         }else{
             $("#contact_phone").css({"background-color":"transparent"});
         }
-    })
+    });
+    $("#contact_form").submit(function(e){
+        // e.preventDefault(e);
+        var chaine_Email=$("#contact_email").val();
+        var regex_Email=/^[a-zA-Z-.]+[@]{1}[a-z-]{2,}[.]{1}[a-z]{2,}$/g;
+        var resultat_Email=regex_Email.test(chaine_Email);
+        var chaine_Name=$("#contact_name").val();
+        var regex_Name=/^[a-zA-Z]+[a-zA-Z-' ]+$/g;
+        var resultat_Name=regex_Name.test(chaine_Name);
+        var chaine_Phone=$("#contact_phone").val();
+        var regex_Phone=/^[0]{1}[1-9]{1}([-. ]?[0-9]{2}){4}$/g;
+        var resultat_Phone=regex_Phone.test(chaine_Phone);
+        if(!resultat_Name){
+            e.preventDefault(e);
+            $("#contact_name_error").show();
+        }
+        if(!resultat_Email){
+            e.preventDefault(e);
+            $("#contact_email_error").show();
+        }
+        if(!resultat_Phone){
+            e.preventDefault(e);
+            $("#contact_phone_error").show();
+        }
+        // if(($("#contact_message").val())===''){
+        //     console
+        //     e.preventDefault(e);
+        //     $("#contact_message").html('Je dois saisir au moins 1 caractère !');
+        // }
+    });
 });

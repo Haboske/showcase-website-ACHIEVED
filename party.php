@@ -4,6 +4,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css js/party.css">
     <link rel="stylesheet" href="assets/FRONT.Carousel.Auto/FRONT.Carousel.Auto.css">
+    <link rel="canonical" href="application-mobile-party" />
     <?php
         require 'assets/head.php'
     ?>

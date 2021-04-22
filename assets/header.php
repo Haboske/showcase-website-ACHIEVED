@@ -12,7 +12,7 @@
 			<nav id="linkedin">
 				<a target="_blank" href="https://www.linkedin.com/in/bryan-delaitre-6a4a281b8/" id='linkedinlink'></a>
 			</nav>
-			<a href="#" id="devislink">Acc&eacute;der &agrave; mon CV</a>
+			<a href="../files/CV Bryan DELAITRE.pdf" target="_blank" id="devislink">Acc&eacute;der &agrave; mon CV</a>
 
 			<!-- NAV FOR PHONE MEDIA -->
 
@@ -25,7 +25,7 @@
 				<a class="menu" id="nav_portfolio" href="Portfolio">
 					<span id="portfolio">portfolio</span>
 				</a>
-				<a class="menu" id="nav_portfolio" href="formulaire-de-contact">
+				<a class="menu" id="nav_contact" href="formulaire-de-contact">
 					<span id="contact">contactez-moi</span>
 				</a>
 

@@ -3,6 +3,7 @@
 <head>
     <title>Document</title>
     <link rel="stylesheet" href="css js/bdwd.css">
+    <link rel="canonical" href="https://bryandelaitre.com/site-portfolio" />
     <?php 
         require 'assets/head.php';
     ?>

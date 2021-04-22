@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Développeur Web Bryan DELAITRE - Accueil</title>
+		<link rel="canonical" href="https://bryandelaitre.com/Accueil" />
 		<link rel="stylesheet" href="css js/index.css">
 		<?php
 			require "assets/head.php";
